@@ -33,4 +33,4 @@
   2.   运行kettle ETL工具
 >  Pentaho Data Integration ( ETL ) a.k.a [Kettle](https://github.com/pentaho/pentaho-kettle). With an intuitive, graphical, drag and drop design environment and a proven, scalable, standards-based architecture, Data Integration is increasingly the choice for organizations over traditional, proprietary ETL or data integration tools.   
 
-  通过容器运行一个apache NiFi服务，进行大数据服务调度和编排  
+  通过容器运行一个kettle应用服务，进行大数据服务调度和编排  
