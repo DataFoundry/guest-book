@@ -29,6 +29,7 @@
 >  [Apache NiFi](https://github.com/apache/nifi) is an easy to use, powerful, and reliable system to process and distribute data.
 
   通过容器运行一个apache NiFi服务，进行大数据服务调度和编排
+  NiFi资源列表：[https://github.com/jfrazee/awesome-nifi](https://github.com/jfrazee/awesome-nifi)
   2.   运行kettle ETL工具
 >  Pentaho Data Integration ( ETL ) a.k.a [Kettle](https://github.com/pentaho/pentaho-kettle). With an intuitive, graphical, drag and drop design environment and a proven, scalable, standards-based architecture, Data Integration is increasingly the choice for organizations over traditional, proprietary ETL or data integration tools.   
 
