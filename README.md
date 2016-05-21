@@ -4,10 +4,11 @@
 ##  datafoundry使用基础
 1.  docker-2048  
 　　由于PAAS的火热带动了一个游戏的普及，那就是2048，详见[在datafoundry平台上运行docker-2048](https://github.com/DataFoundry/docker-2048)
-2.  wordpress绑定mysql后端服务
-　　没有
-2.  通过tensorflow nodejs api完成神经网络模型训练
-
+2.  wordpress绑定mysql后端服务   
+　　在2048出现前，在各个平台上部署的第一个应用通常是wordpress，好看又实用，这回我们通过后端服务给这个经典案例带来一些[新玩法](https://github.com/DataFoundry/wordpress)
+2.  通过tensorflow nodejs api完成神经网络模型训练   
+　　2016年alphaGo成了mechine界和人界的明星，我们也来膜拜一下[tensorflow playground](https://github.com/DataFoundry/tensorflow-playground)
+  
 ##  大数据分析、应用场景  
   1.   Rstudio绑定mongodb后端服务  
 　　在这个案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个RstudioServer中，这样就可以通过Rstudio来对mongodb中的共享数据进行分析，详见[R数据分析场景](https://github.com/DataFoundry/R) 
@@ -19,7 +20,7 @@
 
 
 　　在这个案例中我们使用容器分别启动Caravel和mysql，并通过Caravel初始化mysql数据库中的数据，完成Caravel的demo应用
-  4.   运行openRefine  
+  4.   运行openRefine进行数据探索  
 　　
 > [openRefine](https://github.com/OpenRefine/OpenRefine) is a power tool that allows you to load data, understand it, clean it up, reconcile it, and augment it with data coming from the web. All with the comfort and privacy of your own computer. 
 
