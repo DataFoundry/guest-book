@@ -22,8 +22,10 @@
   4.   运行openRefine进行数据探索  
 > [openRefine](https://github.com/OpenRefine/OpenRefine) is a power tool that allows you to load data, understand it, clean it up, reconcile it, and augment it with data coming from the web. All with the comfort and privacy of your own computer.   
 
-  　　在这个案例中我们使用容器启动openRefine，并通过openrefine下载从aws 送s3上下载[bank.csv](https://s3.cn-north-1.amazonaws.com.cn/bank.csv/bank.csv)中的数据然后进行数据探索相关任务
+  　　在这个案例中我们使用容器启动openRefine，并通过openrefine下载从aws 送s3上下载[bank.csv](https://s3.cn-north-1.amazonaws.com.cn/bank.csv/bank.csv)中的数据然后进行数据探索相关任务   
 
+  2. zeppelin绑定spark后端服务   
+ zeppelin 
 ##  大数据调度工具  
   1.   运行apache nifi ETL工具
 >  [Apache NiFi](https://github.com/apache/nifi) is an easy to use, powerful, and reliable system to process and distribute data.
