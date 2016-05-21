@@ -17,7 +17,7 @@
   3.   Caravel绑定mysql服务，完成数据可视化
 > 　　[Caravel](https://github.com/airbnb/caravel)是airbnb开源的一个数据可视化分析工具可以很方便的和mysql、postgresQL、Druid进行整合完成数据可视化分析。
 
-　　在这个案例中我们使用容器分别启动Caravel和mysql，并通过Caravel初始化mysql数据库中的数据，完成Caravel的demo应用  
+　　在这个案例中我们使用容器分别启动Caravel和mysql，并通过Caravel初始化mysql数据库中的数据，完成Caravel的demo应用,详见Caravel集成MySQL数据库  
   
   4.   运行openRefine进行数据探索  
 > [openRefine](https://github.com/OpenRefine/OpenRefine) is a power tool that allows you to load data, understand it, clean it up, reconcile it, and augment it with data coming from the web. All with the comfort and privacy of your own computer.   
