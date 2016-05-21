@@ -35,4 +35,4 @@
   2.   运行kettle ETL工具
 >  Pentaho Data Integration ( ETL ) a.k.a [Kettle](https://github.com/pentaho/pentaho-kettle). With an intuitive, graphical, drag and drop design environment and a proven, scalable, standards-based architecture, Data Integration is increasingly the choice for organizations over traditional, proprietary ETL or data integration tools.   
 
-  通过容器运行一个kettle应用后端服务服务，并绑定mysql和postgreSQL后端服务进行ETL，详见通过kettle实现ETL服务  
+  通过容器运行一个kettle应用后端服务服务，并绑定mysql和postgreSQL后端服务进行ETL，详见[通过kettle实现ETL服务](https://github.com/DataFoundry/kettle-service)  
