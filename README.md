@@ -26,6 +26,7 @@
 
 ##  大数据调度工具  
   1.   运行apache nifi ETL工具
- 
+>  [Apache NiFi](https://github.com/apache/nifi) is an easy to use, powerful, and reliable system to process and distribute data.
+通过容器运行一个apache NiFi服务，进行大数据服务调度和编排
   2.   运行kettle ETL工具
   
