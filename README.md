@@ -2,15 +2,29 @@
 
 　　为了方便datafoundry用户理解平台的使用，我们收集了一些基于容器、后端服务来部署大数据分析服务的场景，具体如下：  
 ##  datafoundry使用基础
-1.  wordpress绑定mysql后端服务
+1.  docker-2048  
+　　由于PAAS的火热带动了一个游戏的普及，那就是2048，详见[在datafoundry平台上运行docker-2048](https://github.com/DataFoundry/docker-2048)
+2.  wordpress绑定mysql后端服务
+　　没有
 2.  通过tensorflow nodejs api完成神经网络模型训练
 
-##  大数据分析、应用  
+##  大数据分析、应用场景  
   1.   Rstudio绑定mongodb后端服务  
-在案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个RstudioServer中，这样就可以通过Rstudio来对mongodb中的共享数据进行分析，详见 
-  1.   Jupyter绑定mongodb后端服务
-  3.   Cravel绑定mysql服务
+　　在这个案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个RstudioServer中，这样就可以通过Rstudio来对mongodb中的共享数据进行分析，详见[R数据分析场景](https://github.com/DataFoundry/R) 
+  1.   Jupyter绑定mongodb后端服务  
+　　在这个案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个Jupyter notebook中，这样就可以通过Jupyter来对mongodb中的共享数据进行分析，详见[Jupyter数据分析场景](https://github.com/DataFoundry/jupyter)
+  3.   Caravel绑定mysql服务
+
+> 　　[Caravel](https://github.com/airbnb/caravel)是airbnb开源的一个数据可视化分析工具可以很方便的和mysql、postgresQL、Druid进行整合完成数据可视化分析。
+
+
+　　在这个案例中我们使用容器分别启动Caravel和mysql，并通过Caravel初始化mysql数据库中的数据，完成Caravel的demo应用
   4.   运行openRefine  
+　　
+> [openRefine](https://github.com/OpenRefine/OpenRefine) is a power tool that allows you to load data, understand it, clean it up, reconcile it, and augment it with data coming from the web. All with the comfort and privacy of your own computer. 
+
+   
+　　在这个案例中我们使用容器启动openRefine，并通过openrefine下载从aws 送s3上下载[bank.csv](https://s3.cn-north-1.amazonaws.com.cn/bank.csv/bank.csv)中的数据然后进行数据探索相关任务
 
 ##  大数据调度工具  
   1.   运行kettle ETL工具
