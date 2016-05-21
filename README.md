@@ -28,5 +28,7 @@
 　　在这个案例中我们使用容器启动openRefine，并通过openrefine下载从aws 送s3上下载[bank.csv](https://s3.cn-north-1.amazonaws.com.cn/bank.csv/bank.csv)中的数据然后进行数据探索相关任务
 
 ##  大数据调度工具  
-  1.   运行kettle ETL工具
   1.   运行apache nifi ETL工具
+ 
+  2.   运行kettle ETL工具
+  
