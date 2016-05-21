@@ -14,7 +14,7 @@
 　　在这个案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个RstudioServer中，这样就可以通过Rstudio来对mongodb中的共享数据进行分析，详见[R数据分析场景](https://github.com/DataFoundry/R) 
   1.   Jupyter绑定mongodb后端服务  
 　　在这个案例中我们通过datafoundry平台后端服务功能生成一个有共享数据的mongodb数据库后端服务，然后绑定到一个Jupyter notebook中，这样就可以通过Jupyter来对mongodb中的共享数据进行分析，详见[Jupyter数据分析场景](https://github.com/DataFoundry/jupyter)
-  3.   Caravel绑定mysql服务
+  3.   Caravel绑定mysql服务，完成数据可视化
 
 > 　　[Caravel](https://github.com/airbnb/caravel)是airbnb开源的一个数据可视化分析工具可以很方便的和mysql、postgresQL、Druid进行整合完成数据可视化分析。
 
