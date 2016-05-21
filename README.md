@@ -25,7 +25,7 @@
   　　在这个案例中我们使用容器启动openRefine，并通过openrefine下载从aws 送s3上下载[bank.csv](https://s3.cn-north-1.amazonaws.com.cn/bank.csv/bank.csv)中的数据然后进行数据探索相关任务   
 
   2. zeppelin绑定spark后端服务   
- zeppelin 
+ zeppelin是功能非常强大的数据分析和可视化功能，可以非常方便的与多种数据源，特别是spark，进行整合。本案例演示了如果通过datafoundry平台部署zeppelin并集成spark后端服务 
 ##  大数据调度工具  
   1.   运行apache nifi ETL工具
 >  [Apache NiFi](https://github.com/apache/nifi) is an easy to use, powerful, and reliable system to process and distribute data.
