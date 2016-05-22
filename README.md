@@ -26,6 +26,7 @@
 
   2. zeppelin绑定spark后端服务   
  zeppelin是功能非常强大的数据分析和可视化工具，可以非常方便的与多种数据源，特别是spark，进行整合。本案例演示了如果通过datafoundry平台[部署zeppelin并集成spark后端服务](https://github.com/DataFoundry/zeppeline) 
+
 ##  大数据调度工具  
   1.   运行apache nifi ETL工具
 >  [Apache NiFi](https://github.com/apache/nifi) is an easy to use, powerful, and reliable system to process and distribute data.
