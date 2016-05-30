@@ -1,5 +1,4 @@
 # datafoundry部署案例说明 
-
 　　为了方便datafoundry用户理解平台的使用，我们收集了一些基于容器、后端服务来部署大数据分析服务的场景，具体如下：  
 ##  datafoundry使用基础
 ####  docker-2048  
