@@ -24,17 +24,20 @@ WordPress 是一种使用 PHP 语言开发的博客平台，用户可以在支�
 
 ![](img/Part_2_WordPress.png)
 
-> 值得注意的是，此处它还提供了“Run the app”、“Get the code”两个按钮，可以直接查看示例 App 的使用效果和源代码，并可直接 fork // 我们是否支持？
-
 ## 3 开始前的准备工作
 
-在你开始之前，你需要在 DataFoundry 注册一个帐号。你还需要以下浏览器之一：
+在你开始之前，你需要在 DataFoundry 注册一个帐号。
+
+对于图形界面操作，你还需要以下浏览器之一：
 - Firefox 15 或以上
 - Chrome 21 或以上
 - Internet Explorer 10 或以上
 - Safari 7 或以上
 
-> 是否需要其他前置条件？
+对于命令行操作，你还需要下载 OpenShift 客户端：
+- [Windows](https://s3.cn-north-1.amazonaws.com.cn/complier/oc-control.zip)
+- [Mac](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-mac.zip)
+- [Linux](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-linux)
 
 ## 4 Step by Step 详细操作
 
@@ -54,7 +57,7 @@ WordPress 是一种使用 PHP 语言开发的博客平台，用户可以在支�
 3）点击“新建构建”：
 ![](img/Screenshot from 2016-05-12 18-16-17.png)
 
-4）在“构建名称”中输入“wordpress”、在“代码 URL ”中输入 “https://github.com/datafoundry/wordpress.git” 后，点击“开始构建” ：
+4）在“构建名称”中输入“wordpress”、在“代码 URL”中输入 “https://github.com/datafoundry/wordpress.git” 后，点击“开始构建” ：
 ![](img/Screenshot from 2016-05-17 12-11-09.png)
 
 注意：
