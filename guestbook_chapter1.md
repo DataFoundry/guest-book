@@ -19,4 +19,4 @@
 "Deep playground"是一个交互式可视化nodejs应用，它通过d3.js已动态方式演示了一个神经网络模型的训练过程。
 
 在本节我们将通过datafoundry平台部署Deep playground
-![test](6.pic_hd.jpg)
+![test](img/6.pic_hd.jpg)
