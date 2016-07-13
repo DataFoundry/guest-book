@@ -288,7 +288,7 @@ $ oc expose svc wordpress --hostname=wordpress.demo.app.dataos.io --name=wordpre
 
 ## 1 第三节所覆盖的知识点
 
-在第三节，我们将学会如何进行：
+在第三节，我们将学会：
 - 如何对部署的应用进行CI/CD的配置
 
 
