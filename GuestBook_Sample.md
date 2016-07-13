@@ -304,7 +304,7 @@ $ oc expose svc wordpress --hostname=wordpress.demo.app.dataos.io --name=wordpre
 
 ### 2.2 命令行操作
 
-我们可以通过命令对dc,bc和rc对trigger进行操作。这里我们需要介绍triggers的概念：triggers就是指一些能够触发CI/CD的条件。datafoundry中包括两种triggers，分别为配置文件发生改变时触发自动部署和镜像发生改变时触发自动部署。
+我们可以通过命令对dc,bc和rc的triggers进行操作。这里我们需要介绍triggers的概念：triggers就是指一些能够触发CI/CD的条件。datafoundry中包括两种triggers，分别为配置文件发生改变时触发自动部署和镜像发生改变时触发自动部署。
 
 
 #### 2.2.1 列出资源中所有的triggers条件
