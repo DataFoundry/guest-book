@@ -54,23 +54,23 @@ Fork deep playground源码到自己的代码仓库
 ![](img/Screenshot from 2016-05-17 12-10-38.png)
 
 3）点击“新建构建”并选择deep playground代码库，点击“开始构建”
-![](build_code_repo.png)
+![](img/build_code_repo.png)
 4）查看构建进度
-![](build_log.png)
+![](img/build_log.png)
 5）构建完成后点击“查看镜像”
-![](build_image_list.png)
+![](img/build_image_list.png)
 6）点击“部署最新版本”
-![](build_to_deploy.png)
+![](img/build_to_deploy.png)
 7）填写服务基本信息
 - 填写“服务名称”
 - 选择“端口开放协议”
 - 填写“容器端口”及“服务端口”
-![](deploy_basic.png)
+![](img/deploy_basic.png)
 8）填写服务高级信息
 - 点击“路由配置”并选择容器端口、填写域名信息
 - 点击“镜像变化触发自动部署”
-![](deploy_advance.png)
+![](img/deploy_advance.png)
 9）通过路由访问应用
-![](route.png)
+![](img/route.png)
 10) 大功告成
-![](deep_playground.png)
+![](img/deep_playground.png)
