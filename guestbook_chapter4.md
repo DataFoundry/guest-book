@@ -108,7 +108,7 @@ ups-mongodb       USER-PROVIDED-SERVICE                    0         Unbound
 
 ```   
 
-4）查看后端服务详细信息：
+4）查看后端服务实例详细信息：
 
 ```
 $ oc describe bsi ups-mongodb
