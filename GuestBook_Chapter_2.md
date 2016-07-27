@@ -14,7 +14,7 @@
 
 WordPress 是一种使用 PHP 语言开发的博客平台，用户可以在支持 PHP 和 MySQL 数据库的服务器上架设属于自己的网站。也可以把 WordPress 当作一个内容管理系统（CMS）来使用。
 
-在本节，我们将分别使用图形界面与命令行两种方式演示如何通过 DataFoundry 平台提供的 MySQL 后端服务来部署 WordPress 应用。看您到如下界面，说明 WordPress 应用已经成功运行。
+在本节，我们将分别使用图形界面与命令行两种方式演示如何通过 DataFoundry 平台提供的 MySQL 后端服务来部署 WordPress 应用。当你看到如下界面，说明 WordPress 应用已经成功运行。
 
 ![](img/WordPress.png)
 
