@@ -239,8 +239,8 @@ $ oc describe bsi mysql-inst1
   Bound:					0
   Events:
   FirstSeen	LastSeen	Count	From	SubobjectPath	Type	Reason	Message
-  ---------	--------	-----	----	-------------	--------	------		-------
-  5m		5m			1		{bsi }				Normal	Provisioning	bsi provisioning done, instanceid: 340082e4-1734-11e6-a653-fa163edcfb45
+  ---------	--------	-----	----	-------------	----	------	-------
+  5m		5m			1		{bsi}				Normal	Provisioning	bsi provisioning done, instanceid: 340082e4-1734-11e6-a653-fa163edcfb45
 ```
 
 ##### Step 4：后端服务绑定
