@@ -1,12 +1,13 @@
-# 快速实践，第四节：搭建 Rstudio 应用
+# 第四节：使用 User Provided Service - RStudio
 
 > 本教程基于 DataFoundry 经典界面编写，考虑到产品的快速演进，部分步骤和图示可能已经改变。
 
 为了更好地向你介绍 DataFoundry 各种功能，我们编写了这个系列教程，共包含四个章节：
-- 第一节，（XXX），你将学习如何通过代码构建和服务部署来部署一个简单应用；
-- 第二节，搭建 WordPress 应用，你将学习如何使用 DataFoundry 后端服务来部署应用；
-- 第三节，（XXX），你将学习如何使用 DataFoundry 的 DevOps 功能进行 CICD；
-- 第四节，搭建 Rstudio 应用访问 MongoDB 数据库，你将学习如何进行 User Provided Service 实例的创建、部署，并与后端服务绑定。
+
+- 第一节，第一个应用 - TensorFlow Playground，你将学习如何通过代码构建和服务部署来部署一个简单应用；
+- 第二节，使用后端服务 - WordPress，你将学习如何使用 DataFoundry 后端服务来部署应用；
+- 第三节，进行 CI/CD - 2048，你将学习如何使用 DataFoundry 的 DevOps 功能进行 CI/CD；
+- 第四节，使用 User Provided Service - RStudio，你将学习如何进行 User Provided Service 实例的创建、部署，并与后端服务绑定。
 
 ## 1 第四节 所覆盖的知识点
 
@@ -15,11 +16,11 @@
 - 自定义后端支持服务实例
 - 将应用与自定义后端支持服务绑定
 
-## 2 关于 Rstudio 应用
+## 2 关于 RStudio 应用
 
-RStudio是一款免费的编程工具，它运行用户通过RStudio直接从源代码编辑器中执行程序和处理多个项目、工作文件夹，同时还提供了大量的图形和统计方法、统计计算和图形，并支持语法高亮、只能缩进、搜索跳转、预览等多种特色！
+RStudio 是一款免费的编程工具，它运行用户通过 RStudio 直接从源代码编辑器中执行程序和处理多个项目、工作文件夹，同时还提供了大量的图形和统计方法、统计计算和图形，并支持语法高亮、只能缩进、搜索跳转、预览等多种特色！
 
-在本节，我们将演示如何通过 DataFoundry 平台提供的公有镜像部署 Rstudio 应用绑定自定义后端支持服务实例。
+在本节，我们将演示如何通过 DataFoundry 平台提供的公有镜像部署 RStudio 应用绑定自定义后端支持服务实例。
 
 
 ## 3 开始前的准备工作
@@ -27,12 +28,14 @@ RStudio是一款免费的编程工具，它运行用户通过RStudio直接从源
 在你开始之前，你需要在 DataFoundry 注册一个帐号。
 
 对于图形界面操作，你还需要以下浏览器之一：
+
 - Firefox 15 或以上
 - Chrome 21 或以上
 - Internet Explorer 10 或以上
 - Safari 7 或以上
 
 对于命令行操作，你还需要下载 OpenShift 客户端：
+
 - [Windows](https://s3.cn-north-1.amazonaws.com.cn/complier/oc-control.zip)
 - [Mac](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-mac.zip)
 - [Linux](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-linux)
@@ -47,19 +50,19 @@ RStudio是一款免费的编程工具，它运行用户通过RStudio直接从源
 
 1）命令行操作时，“服务部署“可以通过一个命令 `oc run` 完成。
 
-   从 DataFoundry 平台提供的公有镜像部署 Rstudio：
+   从 DataFoundry 平台提供的公有镜像部署 RStudio：
 
 ```
 $ oc run rstudio --image=registry.dataos.io/guestbook/rstudio
-deploymentconfig "rstudio" created
+  deploymentconfig "rstudio" created
 ```  
 
 2）查看部署结果：  
 
 ```
 $ oc get pods
-NAME              READY     STATUS    RESTARTS   AGE
-rstudio-2-24p9b   1/1       Running   0          1m
+  NAME              READY     STATUS    RESTARTS   AGE
+  rstudio-2-24p9b   1/1       Running   0          1m
 ``` 
 
      
@@ -92,19 +95,19 @@ $ oc get bsi
 以上命令输出结果为：  
 
 ```   
-NAME              SERVICE                 PLAN             BOUND     STATUS
-333c              Spark                   One_Worker       1         Bound
-dangsha890        Mysql                   NoCase           2         Bound
-etcd              ETCD                    standalone       0         Unbound
-fdfd              ETCD                    standalone       1         Bound
-my-mongodb        MongoDB                 ShareandCommon   6         Bound
-mysqlinst         Mysql                   Experimental     2         Bound
-new-spark         Spark                   One_Worker       2         Bound
-postgresqlinst    PostgreSQL              Experimental     2         Bound
-postgresqlinst1   PostgreSQL              Experimental     2         Bound
-postgresqlinst2   PostgreSQL              Experimental     2         Bound
-spark             Spark-v1.5.2            One_Worker       2         Bound
-ups-mongodb       USER-PROVIDED-SERVICE                    0         Unbound
+  NAME              SERVICE                 PLAN             BOUND     STATUS
+  333c              Spark                   One_Worker       1         Bound
+  dangsha890        Mysql                   NoCase           2         Bound
+  etcd              ETCD                    standalone       0         Unbound
+  fdfd              ETCD                    standalone       1         Bound
+  my-mongodb        MongoDB                 ShareandCommon   6         Bound
+  mysqlinst         Mysql                   Experimental     2         Bound
+  new-spark         Spark                   One_Worker       2         Bound
+  postgresqlinst    PostgreSQL              Experimental     2         Bound
+  postgresqlinst1   PostgreSQL              Experimental     2         Bound
+  postgresqlinst2   PostgreSQL              Experimental     2         Bound
+  spark             Spark-v1.5.2            One_Worker       2         Bound
+  ups-mongodb       USER-PROVIDED-SERVICE                    0         Unbound
 
 ```   
 
@@ -112,38 +115,38 @@ ups-mongodb       USER-PROVIDED-SERVICE                    0         Unbound
 
 ```
 $ oc describe bsi ups-mongodb
-Name:			ups-mongodb
-Created:		5 minutes ago
-Labels:			<none>
-Annotations:		USER-PROVIDED-SERVICE=true
-Status:			Unbound
-DashboardUrl:		<none>
-BackingServiceName:	USER-PROVIDED-SERVICE
-BackingServicePlanName:	<none>
-BackingServicePlanGuid:	USER-PROVIDED-SERVICE
-Parameters:
-Bound:	0
-No events.
+  Name:						ups-mongodb
+  Created:					5 minutes ago
+  Labels:					<none>
+  Annotations:				USER-PROVIDED-SERVICE=true
+  Status:					Unbound
+  DashboardUrl:				<none>
+  BackingServiceName:		USER-PROVIDED-SERVICE
+  BackingServicePlanName:	<none>
+  BackingServicePlanGuid:	USER-PROVIDED-SERVICE
+  Parameters:
+  Bound:					0
+  No events.
 ```
 
 #### Step 4：后端服务实例绑定
 
-1）以上服务实例创建完成，我们继续把 ups-mongodb 绑定到 Rstudio 应用中：
+1）以上服务实例创建完成，我们继续把 ups-mongodb 绑定到 RStudio 应用中：
 
 ```
 $ oc bind ups-mongodb rstudio
-Backing Service Instance has been bound.
+  Backing Service Instance has been bound.
 ```  
 
 2）查看部署结果：
 
 ```
 $ oc get pods
-NAME              READY     STATUS    RESTARTS   AGE
-rstudio-3-c7t34   1/1       Running   0          1m
+  NAME              READY     STATUS    RESTARTS   AGE
+  rstudio-3-c7t34   1/1       Running   0          1m
 ```  
 
-3）Pod 已正常启动，给 Rstudio 生成一个 route 地址后就可以访问了：
+3）Pod 已正常启动，给 RStudio 生成一个 route 地址后就可以访问了：
 
 ```
 $ oc expose dc rstudio  --port=8787 --name=rstudio
