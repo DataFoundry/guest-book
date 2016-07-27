@@ -2,13 +2,6 @@
 
 > 本教程基于 DataFoundry 经典界面编写，考虑到产品的快速演进，部分步骤和图示可能已经改变。
 
-为了更好地向你介绍 DataFoundry 各种功能，我们编写了这个系列教程，共包含四个章节：
-
-- 第一节，第一个应用 - TensorFlow Playground，你将学习如何通过代码构建和服务部署来部署一个简单应用；
-- 第二节，使用后端服务 - WordPress，你将学习如何使用 DataFoundry 后端服务来部署应用；
-- 第三节，进行 CI/CD - 2048，你将学习如何使用 DataFoundry 的 DevOps 功能进行 CI/CD；
-- 第四节，使用 User Provided Service - RStudio，你将学习如何进行 User Provided Service 实例的创建、部署，并与后端服务绑定。
-
 ## 1 第二节所覆盖的知识点
 
 在第二节，我们将学会如何进行：
