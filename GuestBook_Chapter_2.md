@@ -172,33 +172,33 @@ $ oc get bs -n openshift
 
 ```   
 $ oc describe bs Mysql -n openshift
-  Name:			Mysql
-  Created:		21 hours ago
-  Labels:			asiainfo.io/servicebroker=rdb
-  Annotations:		<none>
-  Description:		A MYSQL DataBase
-  Status:			Active
-  Bindable:		true
-  Updateable:		false
-  documentationUrl:	http://docs.mysql.com
-  longDescription:	OpenSoure RDMBS Mysql
+  Name:					Mysql
+  Created:				21 hours ago
+  Labels:				asiainfo.io/servicebroker=rdb
+  Annotations:			<none>
+  Description:			A MYSQL DataBase
+  Status:				Active
+  Bindable:				true
+  Updateable:			false
+  documentationUrl:		http://docs.mysql.com
+  longDescription:		OpenSoure RDMBS Mysql
   providerDisplayName:	asiainfoLDP
-  supportUrl:		http://www.mysql.com
-  displayName:		Mysql
+  supportUrl:			http://www.mysql.com
+  displayName:			Mysql
 ────────────────────
-  Plan:		Experimental
-  PlanID:		56660431-6032-43D0-A114-FFA3BF521B66
-  PlanDesc:	share a mysql database in one instance
-  PlanFree:	true
+  Plan:					Experimental
+  PlanID:				56660431-6032-43D0-A114-FFA3BF521B66
+  PlanDesc:				share a mysql database in one instance
+  PlanFree:				true
   Bullets:
-  20 GB of Disk
-  20 connections
+  	20 GB of Disk
+  	20 connections
   PlanCosts:
-  CostUnit:	MONTHLY
+  CostUnit:				MONTHLY
   Amount:
     eur: 49
     usd: 99
-  CostUnit:	1GB of messages over 20GB
+  CostUnit:				1GB of messages over 20GB
   Amount:
     eur: 0.49
     usd: 0.99
@@ -225,22 +225,22 @@ $ oc get bsi
 
 ```
 $ oc describe bsi mysql-inst1
-  Name:			mysql-inst1
-  Created:		5 minutes ago
-  Labels:			<none>
-  Annotations:		<none>
-  Status:			Unbound
-  DashboardUrl:		http://e412377c9b5f3db:1394e5f077d1519@phpmyadmin-service-broker-db.app.dataos.io?db=8c60f229ef4dac0
-  BackingServiceName:	Mysql
+  Name:						mysql-inst1
+  Created:					5 minutes ago
+  Labels:					<none>
+  Annotations:				<none>
+  Status:					Unbound
+  DashboardUrl:				http://e412377c9b5f3db:1394e5f077d1519@phpmyadmin-service-broker-db.app.dataos.io?db=8c60f229ef4dac0
+  BackingServiceName:		Mysql
   BackingServicePlanName:	Experimental
   BackingServicePlanGuid:	56660431-6032-43D0-A114-FFA3BF521B66
   Parameters:
-  instance_id:	340082e4-1734-11e6-a653-fa163edcfb45
-  Bound:		0
+  instance_id:				340082e4-1734-11e6-a653-fa163edcfb45
+  Bound:					0
   Events:
-  FirstSeen	LastSeen	Count	From	SubobjectPath	Type		Reason		Message
+  FirstSeen	LastSeen	Count	From	SubobjectPath	Type	Reason	Message
   ---------	--------	-----	----	-------------	--------	------		-------
-  5m		5m		1	{bsi }			Normal		Provisioning	bsi provisioning done, instanceid: 340082e4-1734-11e6-a653-fa163edcfb45
+  5m		5m			1		{bsi }				Normal	Provisioning	bsi provisioning done, instanceid: 340082e4-1734-11e6-a653-fa163edcfb45
 ```
 
 ##### Step 4：后端服务绑定
