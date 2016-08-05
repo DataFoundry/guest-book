@@ -5,13 +5,14 @@
 ## 1 第一节所覆盖的知识点
 
 在第一节，我们将学会如何进行：
+
 - 代码构建
 - 服务部署
 
-## 2 关于“Deep playground”应用
+## 2 关于 TensorFlow Playground 应用
 
-"Deep playground"是一个交互式可视化 nodejs 应用，它通过 d3.js 以动态方式演示了一个神经网络模型的训练过程。
-在本节我们将通过 DataFoundry 平台部署 Deep playground。
+TensorFlow Playground 是一个交互式可视化 nodejs 应用，它通过 d3.js 以动态方式演示了一个神经网络模型的训练过程。
+在本节我们将通过 DataFoundry 平台部署 TensorFlow Playground。
 ![](img/deep_playground.png)
 
 ## 3 开始前的准备工作
@@ -27,14 +28,18 @@
 
 对于命令行操作，你还需要下载 OpenShift 客户端：
 
-- [Windows](https://s3.cn-north-1.amazonaws.com.cn/complier/oc-control.zip)
-- [Mac](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-mac.zip)
-- [Linux](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-linux)
+- [Linux 32bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-32bit.tar.gz)
+- [Linux 64bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-64bit.tar.gz)
+- [Mac](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/mac.zip)
+- [Windows](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/windows.zip)
 
-Fork deep playground源码到自己的代码仓库
+Fork TensorFLow Playground 源码到自己的代码仓库：
 
 - 预置 dockerfile 版，[https://github.com/DataFoundry/tensorflow-playground.git](https://github.com/DataFoundry/tensorflow-playground.git)   
-- 官方版（需准备 dockerfile），[https://github.com/tensorflow/playground.git  ](https://github.com/tensorflow/playground.git)
+- 官方版（需准备 dockerfile），[https://github.com/tensorflow/playground.git](https://github.com/tensorflow/playground.git)
+
+
+
 
 ## 4 Step by Step 详细操作
 

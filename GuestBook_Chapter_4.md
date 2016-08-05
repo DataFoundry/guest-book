@@ -30,9 +30,11 @@ RStudio 是一款免费的编程工具，它运行用户通过 RStudio 直接从
 
 对于命令行操作，你还需要下载 OpenShift 客户端：
 
-- [Windows](https://s3.cn-north-1.amazonaws.com.cn/complier/oc-control.zip)
-- [Mac](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-mac.zip)
-- [Linux](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-linux)
+- [Linux 32bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-32bit.tar.gz)
+- [Linux 64bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-64bit.tar.gz)
+- [Mac](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/mac.zip)
+- [Windows](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/windows.zip)
+
 
 ## 4 Step by Step 详细操作
 

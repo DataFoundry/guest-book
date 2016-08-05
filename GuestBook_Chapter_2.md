@@ -5,9 +5,8 @@
 ## 1 第二节所覆盖的知识点
 
 在第二节，我们将学会如何进行：
-- 代码构建
+
 - 后端服务申请
-- 服务部署
 - 将应用与后端服务绑定
 
 ## 2 关于 WordPress 应用
@@ -31,9 +30,14 @@ WordPress 是一种使用 PHP 语言开发的博客平台，用户可以在支�
 
 对于命令行操作，你还需要下载 OpenShift 客户端：
 
-- [Windows](https://s3.cn-north-1.amazonaws.com.cn/complier/oc-control.zip)
-- [Mac](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-mac.zip)
-- [Linux](https://s3.cn-north-1.amazonaws.com.cn/complier/openshift-origin-client-tools-v1.1.0.1-bf56e23-linux)
+- [Linux 32bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-32bit.tar.gz)
+- [Linux 64bit](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/linux-64bit.tar.gz)
+- [Mac](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/mac.zip)
+- [Windows](https://s3.cn-north-1.amazonaws.com.cn/datafoundry/client/windows.zip)
+
+Fork WordPress 源码到自己的代码仓库：
+
+- 预置 dockerfile 版，[https://github.com/DataFoundry/wordpress](https://github.com/DataFoundry/wordpress)
 
 ## 4 Step by Step 详细操作
 
