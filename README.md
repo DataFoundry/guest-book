@@ -7,7 +7,6 @@
 * [第三节，进行 CI\/CD - 2048](GuestBook_Chapter_3.md)，你将学习如何使用 DataFoundry 的 DevOps 功能进行 CI\/CD；
 * [第四节，使用 User Provided Service - RStudio](GuestBook_Chapter_4.md)，你将学习如何进行 User Provided Service 实例的创建、部署，并与后端服务绑定。
 
-test
 
 ```
 {% raw %}
